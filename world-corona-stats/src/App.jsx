@@ -8,6 +8,7 @@ import News from "./components/News";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
+require("dotenv").config();
 
 export default function App() {
   const [allInformation, setAllInformation] = useState([]);
@@ -20,7 +21,7 @@ export default function App() {
       headers: {
         "content-type": "application/octet-stream",
         "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-        "x-rapidapi-key": "130e574162msh6cc16dbd234fc6ep18d4e3jsn9a2bc8ca2759"
+        "x-rapidapi-key": process.env.REACT_APP_API_CORONA_KEY
       }
     });
 
@@ -34,7 +35,7 @@ export default function App() {
       headers: {
         "content-type": "application/octet-stream",
         "x-rapidapi-host": "ajayakv-rest-countries-v1.p.rapidapi.com",
-        "x-rapidapi-key": "95ed494296msh9b986ffaf2a367cp1fb366jsn29167ed869d6"
+        "x-rapidapi-key": process.env.REACT_APP_API_POP_KEY
       }
     });
 
