@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "heroku": "^7.38.2"
-  }
-}
