@@ -1,10 +1,10 @@
-World corona stats
+#World corona stats
 
 This was created during our time as students at Code Chrysalis.
 
 Try our app here.
 
-Setup instructions
+##Setup instructions
 
 1. clone this repo
 
@@ -18,7 +18,7 @@ yarn
 
 yarn start
 
-Authors
+##Authors
 
 Kasumi Nakano
 Ryuki Kuga
